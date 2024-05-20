@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo">Click or move your mouse pointer over this paragraph.</p>
+<script>
+document.getElementById("demo").onmousemove = function() {mouseMoveFunction()};
+document.getElementById("demo").onclick = function() {mouseClickFunction()};
+function mouseMoveFunction() {
+ document.getElementById("demo").innerHTML = "You moved the mouse pointer.";
+}
+function mouseClickFunction() {
+ document.getElementById("demo").innerHTML = "You clicked the mouse.";
+}
+</script>
+</body>
+</html>
